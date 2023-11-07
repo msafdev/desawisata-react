@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  min-width: 320px;
+
+  overflow-x: hidden;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.hero-1 {
+  position: relative;
+  background-image: url("https://images.unsplash.com/photo-1572402123736-c79526db405a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.hero-2 {
+  position: relative;
+  background-image: url("https://images.unsplash.com/photo-1691486921200-519ac5527f0e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2189&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.hero-3 {
+  position: relative;
+  background-image: url("https://images.unsplash.com/photo-1609881583302-61548332039c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2088&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.hero-4 {
+  position: relative;
+  background-image: url("https://images.unsplash.com/photo-1505069446780-4ef442b5207f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.hero-5 {
+  position: relative;
+  background-image: url("https://desawisatasambirejo.com/wp-content/uploads/2020/04/topography.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.hero-1::before,
+.hero-2::before,
+.hero-3::before,
+.hero-4::before {
+  content: "";
+  background: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Adjust the last value (0.5) for the desired darkness */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.darken-filter {
+  filter: brightness(70%); /* Adjust the percentage to control the darkness */
+}
+
+div {
+  transition: all 0.3s ease-in-out;
+}
+
+.shadow-cust {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+.bg-topo {
+  background-image: url("https://desawisatasambirejo.com/wp-content/uploads/2020/04/topography.svg");
+  background-repeat: no-repeat;
+  background-size: 10%;
+  background-position: top center;
+  background-size: cover;
+}
+
+@media (max-width: 320px) {
+  :root {
+    overflow-x: scroll;
+  }
+}
