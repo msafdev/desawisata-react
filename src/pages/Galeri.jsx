@@ -66,6 +66,21 @@ export default function Galeri() {
           menirukan suara gamelan dengan menggunakan alat-alat seadanya seperti
           batok kelapa, kentongan bambu, dan lesung.
         </p>
+        <h1 className="uppercase font-semibold text-center mb-4 mt-6 md:mt-12 text-lg md:text-2xl">
+          Galeri
+        </h1>
+        <div className="grid w-full lg:grid-cols-4 md:grid-cols-3 grid-cols-2 md:gap-6 gap-4">
+          {Array(8)
+            .fill()
+            .map((_, i) => (
+              <div
+                key={i}
+                className={`bg-gray-300 aspect-square ${
+                  i === 0 && "md:col-span-2 lg:col-span-1 md:aspect-auto"
+                }`}
+              />
+            ))}
+        </div>
       </div>
     </div>
   );

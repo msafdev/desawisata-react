@@ -31,8 +31,56 @@ export default function Pariwisata() {
         </div>
       </div>
       {/* Detail */}
-      <div className="w-full min-h-[calc(100vh-100px)] flex flex-col justify-center items-center py-10 text-center px-8 bg-white">
-        <h1>Hello</h1>
+      <div className="w-full flex flex-col justify-center items-center py-8 gap-y-6 md:py-12 text-center bg-white">
+        <h1 className="uppercase font-semibold text-center mb-4 text-lg md:text-2xl lg:px-[25%] md:px-[15%] px-4">
+          Pariwisata Desa Wisata Kebonan
+        </h1>
+        {/* Pariwisata Cards */}
+        <div className="flex flex-col md:flex-row gap-y-4 w-full gap-x-6 lg:px-[20%] md:px-[5%] px-4">
+          <div className="aspect-square md:h-[250px] lg:h-[240px] h-[200px] bg-gray-300" />
+          <div className="flex flex-col">
+            <h1 className="text-left font-semibold md:text-xl text-lg">
+              Rafting
+            </h1>
+            <p className="text-justify md:text-lg text-base my-2">
+              Pariwisata wahana arung jeram di sungai serayu dengan panjang 12
+              km, dengan 3 level kesulitan, yaitu level 1, level 2, dan level 3.
+              Wahana arung jeram ini sangat cocok untuk wisata keluarga, dengan
+              harga tiket Rp. 50.000,-/orang.
+            </p>
+            <button className="w-fit flex items-center gap-3 font-semibold text-sm text-white bg-primary px-4 py-2 rounded-full mt-auto ml-auto uppercase group">
+              Lihat
+            </button>
+          </div>
+        </div>
+        {/* <div className="flex w-full gap-x-6">
+          <div className="aspect-square h-[200px] bg-gray-300" />
+          <div className="flex flex-col">
+            <h1 className="text-left font-semibold md:text-2xl text-xl">Fun Games</h1>
+            <p className="text-justify lg:text-xl md:text-lg text-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+              necessitatibus ducimus facere, eaque quas cumque excepturi sint!
+              Assumenda.
+            </p>
+            <button className="w-fit flex items-center gap-3 font-semibold text-sm text-white bg-primary px-4 py-2 rounded-full mt-auto uppercase group">
+              Lihat
+            </button>
+          </div>
+        </div>
+        <div className="flex w-full gap-x-6">
+          <div className="aspect-square h-[200px] bg-gray-300" />
+          <div className="flex flex-col">
+            <h1 className="text-left font-semibold md:text-2xl text-xl">Camping</h1>
+            <p className="text-justify lg:text-xl md:text-lg text-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+              necessitatibus ducimus facere, eaque quas cumque excepturi sint!
+              Assumenda.
+            </p>
+            <button className="w-fit flex items-center gap-3 font-semibold text-sm text-white bg-primary px-4 py-2 rounded-full mt-auto uppercase group">
+              Lihat
+            </button>
+          </div>
+        </div> */}
       </div>
     </div>
   );
