@@ -17,21 +17,22 @@ function Beranda() {
         {/* Hero */}
         <div className="hero-1 w-full h-[calc(100vh-100px)] flex flex-col justify-center px-4 md:px-[10%] lg:px-[15%] xl:px-[25%]">
           <h1 className="text-white text-3xl md:text-4xl lg:text-5xl z-[5] font-extrabold italic">
-            <span className="font-medium not-italic">Desa Wisata</span>{" "}
-            Sambirejo
+            <span className="font-medium not-italic">Wisata</span> Alas Watu
+            Kebonan
           </h1>
           <p className="text-white text-opacity-80 z-[5] text-sm md:text-lg lg:text-xl font-medium text-justify my-2 md:my-3 lg:my-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-            voluptate autem sapiente id culpa repellendus officia doloremque?
-            Dolorem inventore quidem alias accusamus dolorum asperiores iste,
-            laudantium quam incidunt, ad adipisci?
+            Desa Kebonan, Karanggede, memiliki destinasi wisata yang menarik dan
+            unik yang sering dikenal dengan singkatan AWK (Aku Wong Kebonan).
+            Alas Watu Kebonan, demikian pula namanya, adalah tempat yang
+            menawarkan keajaiban alam yang luar biasa. Di sini, kita akan
+            menemukan berbagai batuan dengan beragam ukuran dan bentuk.
           </p>
           <div className="flex w-full md:flex-row flex-col flex-wrap justify-end items-end gap-x-3 gap-y-2 z-[5]">
             <button className="w-fit bg-green-500 flex items-center gap-3 font-semibold text-sm md:text-base text-white px-4 py-2 rounded-2xl hover:bg-green-600 transition-all duration-300 ease-in-out">
-              <Compass size={18} /> Lihat Pariwisata
+              <Compass size={19} /> Jelajahi AWK
             </button>
             <button className="w-fit bg-gray-100 flex items-center gap-3 font-semibold text-sm md:text-base text-gray-800 px-4 py-2 rounded-2xl hover:bg-gray-200 transition-all duration-300 ease-in-out">
-              <ShoppingCart size={18} /> Lihat UMKM
+              <ShoppingCart size={19} /> Lihat UMKM
             </button>
           </div>
         </div>
