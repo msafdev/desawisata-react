@@ -67,27 +67,27 @@ const galeri = [
   },
   {
     id: 3,
-    url: "../src/assets/awk-asset-11.jpg",
+    url: Asset11,
   },
   {
     id: 4,
-    url: "../src/assets/awk-asset-5.jpg",
+    url: Asset5,
   },
   {
     id: 5,
-    url: "../src/assets/awk-asset-8.jpg",
+    url: Asset8,
   },
   {
     id: 6,
-    url: "../src/assets/awk-asset-12.jpg",
+    url: Asset12,
   },
   {
     id: 7,
-    url: "../src/assets/awk-asset-13.jpg",
+    url: Asset13,
   },
   {
     id: 8,
-    url: "../src/assets/awk-asset-15.jpg",
+    url: Asset15,
   },
 ];
 
