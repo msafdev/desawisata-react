@@ -10,8 +10,6 @@ import { products, pariwisata, seniBudaya } from "../data";
 import Product from "../components/Product";
 import { Link } from "react-router-dom";
 
-import asset1 from "../assets/awk-asset"
-
 function Beranda() {
   return (
     <>
