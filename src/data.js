@@ -18,17 +18,17 @@ import Asset16 from "../src/assets/awk-asset-16.jpg";
 const pariwisata = [
   {
     id: 1,
-    url: "../src/assets/awk-asset-2.jpg",
+    url: Asset2,
     nama: "River Tubing",
   },
   {
     id: 2,
-    url: "../src/assets/awk-asset-11.jpg",
+    url: Asset11,
     nama: "Fun Games",
   },
   {
     id: 3,
-    url: "../src/assets/awk-asset-5.jpg",
+    url: Asset5,
     nama: "Camping",
   },
 ];
@@ -37,22 +37,22 @@ const seniBudaya = [
   {
     id: 1,
     nama: "Kuliner",
-    url: "../src/assets/awk-asset-16.jpg",
+    url: Asset16,
   },
   {
     id: 2,
     nama: "Games",
-    url: "../src/assets/awk-asset-9.jpg",
+    url: Asset9,
   },
   {
     id: 3,
     nama: "Kesenian",
-    url: "../src/assets/awk-asset-13.jpg",
+    url: Asset13,
   },
   {
     id: 4,
     nama: "Wisata",
-    url: "../src/assets/awk-asset-4.jpg",
+    url: Asset4,
   },
 ];
 
