@@ -1,3 +1,20 @@
+import Asset1 from "../src/assets/awk-asset-1.jpg";
+import Asset2 from "../src/assets/awk-asset-2.jpg";
+import Asset3 from "../src/assets/awk-asset-3.jpg";
+import Asset4 from "../src/assets/awk-asset-4.jpg";
+import Asset5 from "../src/assets/awk-asset-5.jpg";
+import Asset6 from "../src/assets/awk-asset-6.jpg";
+import Asset7 from "../src/assets/awk-asset-7.jpg";
+import Asset8 from "../src/assets/awk-asset-8.jpg";
+import Asset9 from "../src/assets/awk-asset-9.jpg";
+import Asset10 from "../src/assets/awk-asset-10.jpg";
+import Asset11 from "../src/assets/awk-asset-11.jpg";
+import Asset12 from "../src/assets/awk-asset-12.jpg";
+import Asset13 from "../src/assets/awk-asset-13.jpg";
+import Asset14 from "../src/assets/awk-asset-14.jpg";
+import Asset15 from "../src/assets/awk-asset-15.jpg";
+import Asset16 from "../src/assets/awk-asset-16.jpg";
+
 const pariwisata = [
   {
     id: 1,
@@ -42,11 +59,11 @@ const seniBudaya = [
 const galeri = [
   {
     id: 1,
-    url: "../src/assets/awk-asset-2.jpg",
+    url: Asset2,
   },
   {
     id: 2,
-    url: "../src/assets/awk-asset-3.jpg",
+    url: Asset3,
   },
   {
     id: 3,
