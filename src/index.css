@@ -22,7 +22,7 @@
 
 .hero-1 {
   position: relative;
-  background-image: url("./assets/awk-bg-1.jpg");
+  background-image: url("./assets/awk-asset-14.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -30,7 +30,7 @@
 
 .hero-2 {
   position: relative;
-  background-image: url("https://images.unsplash.com/photo-1691486921200-519ac5527f0e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2189&q=80");
+  background-image: url("./assets/awk-asset-8.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -38,7 +38,7 @@
 
 .hero-3 {
   position: relative;
-  background-image: url("https://images.unsplash.com/photo-1609881583302-61548332039c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2088&q=80");
+  background-image: url("./assets/awk-asset-12.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -46,7 +46,7 @@
 
 .hero-4 {
   position: relative;
-  background-image: url("https://images.unsplash.com/photo-1505069446780-4ef442b5207f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80");
+  background-image: url("./assets/awk-asset-13.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;

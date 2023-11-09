@@ -1,17 +1,17 @@
 const pariwisata = [
   {
     id: 1,
-    url: "https://images.unsplash.com/photo-1629248457649-b082812aea6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    url: "../src/assets/awk-asset-2.jpg",
     nama: "River Tubing",
   },
   {
     id: 2,
-    url: "https://images.unsplash.com/photo-1603698041800-12712170de1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+    url: "../src/assets/awk-asset-11.jpg",
     nama: "Fun Games",
   },
   {
     id: 3,
-    url: "https://images.unsplash.com/photo-1631500042068-71e4e797277f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+    url: "../src/assets/awk-asset-5.jpg",
     nama: "Camping",
   },
 ];
@@ -19,23 +19,58 @@ const pariwisata = [
 const seniBudaya = [
   {
     id: 1,
-    nama: "Tari",
-    url: "https://images.unsplash.com/photo-1655793488799-1ffba5b22cbd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+    nama: "Kuliner",
+    url: "../src/assets/awk-asset-16.jpg",
   },
   {
     id: 2,
-    nama: "Musik",
-    url: "https://images.unsplash.com/photo-1659224208036-a909ce9ccb5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    nama: "Games",
+    url: "../src/assets/awk-asset-9.jpg",
   },
   {
     id: 3,
     nama: "Kesenian",
-    url: "https://images.unsplash.com/photo-1659224208036-a909ce9ccb5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    url: "../src/assets/awk-asset-13.jpg",
   },
   {
     id: 4,
-    nama: "Kuliner",
-    url: "https://images.unsplash.com/photo-1655801379559-994fa8ec3b0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+    nama: "Wisata",
+    url: "../src/assets/awk-asset-4.jpg",
+  },
+];
+
+const galeri = [
+  {
+    id: 1,
+    url: "../src/assets/awk-asset-2.jpg",
+  },
+  {
+    id: 2,
+    url: "../src/assets/awk-asset-3.jpg",
+  },
+  {
+    id: 3,
+    url: "../src/assets/awk-asset-11.jpg",
+  },
+  {
+    id: 4,
+    url: "../src/assets/awk-asset-5.jpg",
+  },
+  {
+    id: 5,
+    url: "../src/assets/awk-asset-8.jpg",
+  },
+  {
+    id: 6,
+    url: "../src/assets/awk-asset-12.jpg",
+  },
+  {
+    id: 7,
+    url: "../src/assets/awk-asset-13.jpg",
+  },
+  {
+    id: 8,
+    url: "../src/assets/awk-asset-15.jpg",
   },
 ];
 
@@ -43,45 +78,45 @@ const products = [
   {
     id: 1,
     nama: "Produk 1",
-    deskripsi: "Deskripsi produk 1",
+    deskripsi: "Belum ada produk yang dicantumkan, produk ini merupakan placeholder produk yang akan datang nantinya.",
     harga: 10.99,
     imageUrl: "https://example.com/image1.jpg",
   },
   {
     id: 2,
     nama: "Produk 2",
-    deskripsi: "Deskripsi produk 2",
+    deskripsi: "Belum ada produk yang dicantumkan, produk ini merupakan placeholder produk yang akan datang nantinya.",
     harga: 19.99,
     imageUrl: "https://example.com/image2.jpg",
   },
   {
     id: 3,
     nama: "Produk 3",
-    deskripsi: "Deskripsi produk 3",
+    deskripsi: "Belum ada produk yang dicantumkan, produk ini merupakan placeholder produk yang akan datang nantinya.",
     harga: 7.49,
     imageUrl: "https://example.com/image3.jpg",
   },
   {
     id: 4,
     nama: "Produk 4",
-    deskripsi: "Deskripsi produk 4",
+    deskripsi: "Belum ada produk yang dicantumkan, produk ini merupakan placeholder produk yang akan datang nantinya.",
     harga: 10.99,
     imageUrl: "https://example.com/image1.jpg",
   },
   {
     id: 5,
     nama: "Produk 5",
-    deskripsi: "Deskripsi produk 5",
+    deskripsi: "Belum ada produk yang dicantumkan, produk ini merupakan placeholder produk yang akan datang nantinya.",
     harga: 19.99,
     imageUrl: "https://example.com/image2.jpg",
   },
   {
     id: 6,
     nama: "Produk 6",
-    deskripsi: "Deskripsi produk 6",
+    deskripsi: "Belum ada produk yang dicantumkan, produk ini merupakan placeholder produk yang akan datang nantinya.",
     harga: 7.49,
     imageUrl: "https://example.com/image3.jpg",
   },
 ];
 
-export { products, pariwisata, seniBudaya };
+export { products, pariwisata, seniBudaya, galeri };

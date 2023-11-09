@@ -61,7 +61,7 @@ export default function Navbar() {
           className="flex items-center mr-auto w-12 h-12 border-0 z-[4]"
         >
           <img
-            src="https://desawisatasambirejo.com/wp-content/uploads/2021/12/Logo-800x800px.png"
+            src="https://kebonan.desa.id/assets/images/logo-275x399.png"
             className="w-full h-full"
             alt="Logo Desa Pariwisata"
           />

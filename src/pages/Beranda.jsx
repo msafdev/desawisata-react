@@ -15,7 +15,10 @@ function Beranda() {
     <>
       <div className="min-h-screen w-full flex flex-col bg-white text-primary pt-[100px]">
         {/* Hero */}
-        <div className="hero-1 w-full h-[calc(100vh-100px)] flex flex-col justify-center px-4 md:px-[10%] lg:px-[15%] xl:px-[25%]">
+        <div
+          id="hero"
+          className="hero-1 w-full h-[calc(100vh-100px)] flex flex-col justify-center px-4 md:px-[10%] lg:px-[15%] xl:px-[25%]"
+        >
           <h1 className="text-white text-3xl md:text-4xl lg:text-5xl z-[5] font-extrabold italic">
             <span className="font-medium not-italic">Wisata</span> Alas Watu
             Kebonan
@@ -28,18 +31,43 @@ function Beranda() {
             menemukan berbagai batuan dengan beragam ukuran dan bentuk.
           </p>
           <div className="flex w-full md:flex-row flex-col flex-wrap justify-end items-end gap-x-3 gap-y-2 z-[5]">
-            <button className="w-fit bg-green-500 flex items-center gap-3 font-semibold text-sm md:text-base text-white px-4 py-2 rounded-2xl hover:bg-green-600 transition-all duration-300 ease-in-out">
+            <button
+              onClick={() => {
+                window.scrollTo({
+                  top: document.getElementById("hero").scrollHeight,
+                  behavior: "smooth",
+                  offset: -100,
+                });
+              }}
+              className="w-fit bg-green-500 flex items-center gap-3 font-semibold text-sm md:text-base text-white px-4 py-2 rounded-2xl hover:bg-green-600 transition-all duration-300 ease-in-out"
+            >
               <Compass size={19} /> Jelajahi AWK
             </button>
-            <button className="w-fit bg-gray-100 flex items-center gap-3 font-semibold text-sm md:text-base text-gray-800 px-4 py-2 rounded-2xl hover:bg-gray-200 transition-all duration-300 ease-in-out">
+            <button
+              onClick={() => {
+                window.scrollTo({
+                  // scroll past all id hero, pariwisata, and seni and offset 100
+                  top:
+                    document.getElementById("pariwisata").scrollHeight +
+                    document.getElementById("seni").scrollHeight +
+                    document.getElementById("hero").scrollHeight,
+                  behavior: "smooth",
+                  offset: -100,
+                });
+              }}
+              className="w-fit bg-gray-100 flex items-center gap-3 font-semibold text-sm md:text-base text-gray-800 px-4 py-2 rounded-2xl hover:bg-gray-200 transition-all duration-300 ease-in-out"
+            >
               <ShoppingCart size={19} /> Lihat UMKM
             </button>
           </div>
         </div>
         {/* Pariwisata */}
-        <div className="w-full min-h-[calc(100vh-100px)] flex flex-col justify-center items-center py-10 text-center px-8 bg-white">
+        <div
+          id="pariwisata"
+          className="w-full min-h-[calc(100vh-100px)] flex flex-col justify-center items-center py-10 text-center px-8 bg-white"
+        >
           <p className="text-xs md:text-sm font-semibold text-opacity-60 text-primary uppercase">
-            Mau ke mana?
+            Mau ngapain?
           </p>
           <h1 className="md:text-3xl text-2xl font-bold text-primary">
             Destinasi Pariwisata
@@ -63,35 +91,46 @@ function Beranda() {
               </div>
             ))}
           </div>
-          <button className="w-fit px-4 py-2 border-2 rounded-2xl flex gap-3 items-center shadow-none hover:shadow-md duration-300 transition-all ease-in-out">
+          <Link
+            to="/pariwisata"
+            className="w-fit px-4 py-2 border-2 rounded-2xl flex gap-3 items-center shadow-none hover:shadow-md duration-300 transition-all ease-in-out"
+          >
             <FlameKindling size={20} className="text-amber-500" />
             <p className="md:text-base text-sm font-semibold">
               Destinasi Lengkap
             </p>
-          </button>
+          </Link>
         </div>
         {/* Seni Budaya */}
-        <div className="w-full h-fit flex flex-col justify-center lg:justify-start items-center text-center py-14 px-4 md:px-8 bg-topo">
+        <div
+          id="seni"
+          className="w-full h-fit flex flex-col justify-center lg:justify-start items-center text-center py-14 px-4 md:px-[8%] bg-topo"
+        >
           <div className="flex flex-wrap-reverse w-full lg:my-auto justify-center gap-8 lg:gap-8">
             <div className="flex flex-col text-left lg:w-1/2 max-w-[500px] lg:max-w-none">
               <p className="text-xs md:text-sm font-semibold text-opacity-60 text-primary uppercase text-center md:text-left">
-                Galeri Seni Budaya
+                Galeri dan Sejarah
               </p>
               <h1 className="md:text-3xl text-2xl font-bold text-primary text-center md:text-left">
-                Temukan Pesona Seni Budaya Desa Sambirejo
+                Temukan Pesona Wisata Edukasi AWK
               </h1>
-              <p className="text-justify my-4 text-sm md:text-base">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-                repellendus ut delectus, nulla, sapiente laboriosam possimus
-                quia similique suscipit quod incidunt doloremque tempora nobis?
-                Aliquam dolores doloribus explicabo perspiciatis quae.
+              <p className="text-justify my-2 text-sm md:text-base font-medium">
+                Alas Watu Kebonan memberikan pengalaman dan variasi wisata yang
+                berbeda dari biasanya. Di sini, kita bisa menikmati keindahan
+                alam, belajar tentang sejarah, dan menikmati seni budaya yang
+                khas. Alas Watu Kebonan juga menyediakan fasilitas yang lengkap
+                untuk memudahkan wisatawan dalam menjelajahi tiap-tiap destinasi
+                wisata.
               </p>
-              <button className="w-fit mt-auto px-4 py-2 bg-primary hover:bg-green-500 duration-300 transition-all ease-in-out text-white rounded-2xl flex flex-row-reverse gap-3 items-center self-end">
+              <Link
+                to="/seni-budaya"
+                className="w-fit mt-auto px-4 py-2 bg-primary hover:bg-green-500 duration-300 transition-all ease-in-out text-white rounded-2xl flex flex-row-reverse gap-3 items-center self-end"
+              >
                 <ChevronRight size={18} />
                 <p className="md:text-base text-sm font-semibold">
                   Lihat Semua
                 </p>
-              </button>
+              </Link>
             </div>
             <div className="grid w-[500px] h-[300px] grid-cols-2 grid-rows-2 gap-4">
               {seniBudaya.map((seni, index) => (
@@ -115,7 +154,10 @@ function Beranda() {
           </div>
         </div>
         {/* UMKM */}
-        <div className="w-full min-h-[calc(100vh-100px)] flex flex-col justify-center items-center py-10 text-center px-4 md:px-8 bg-white">
+        <div
+          id="umkm"
+          className="w-full min-h-[calc(100vh-100px)] flex flex-col justify-center items-center py-10 text-center px-4 md:px-8 bg-white"
+        >
           <div className="flex flex-col w-full">
             <p className="text-xs md:text-sm font-semibold text-opacity-60 text-primary uppercase text-center">
               Ayo Belanja

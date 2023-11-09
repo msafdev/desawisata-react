@@ -6,6 +6,7 @@ export default function Artikel() {
   const [loading, setLoading] = useState(true);
   const [blog, setBlog] = useState([]);
 
+  // Hygraph GQL API
   useEffect(() => {
     const fetchBlog = async () => {
       try {
@@ -65,24 +66,24 @@ export default function Artikel() {
   }
 
   return (
-    <div className="min-h-screen w-full flex flex-col bg-white text-primary pt-[100px]">
+    <div className="w-full flex flex-col bg-white text-primary pt-[100px]">
       {/* Hero */}
       <div className="w-full bg-black h-fit md:py-16 py-8 flex flex-col lg:flex-col justify-center px-[6%] md:px-[10%] lg:px-[15%] xl:px-[25%]">
         <h1 className="text-white text-4xl md:text-5xl z-[5] font-extrabold italic">
           Artikel
         </h1>
         <p className="text-white text-opacity-80 z-[5] text-sm md:text-lg lg:text-xl font-medium text-justify my-2 md:my-3 lg:my-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-          cumque est veritatis mollitia, iure ad perspiciatis optio eius
-          molestias voluptate adipisci ipsam dolore? Animi ea laborum
-          dignissimos et. Nesciunt, dolor!
+          Berikut adalah artikel-artikel yang telah kami buat untuk Anda.
+          Artikel-artikel ini berisi informasi-informasi yang dapat Anda gunakan
+          untuk menambah wawasan Anda, juga dapat Anda gunakan sebagai referensi
+          untuk menentukan tujuan wisata Anda di AWK.
         </p>
       </div>
       {/* Artikel */}
-      <div className="flex flex-col gap-8 py-8 md:py-12 items-center">
-        <p className="text-xl font-semibold text-primary z-[5]">
-          Semua Artikel
-        </p>
+      <div className="flex flex-col gap-6 py-8 md:py-12 items-center">
+        <h1 className="uppercase font-semibold text-center mb-0 text-lg md:text-2xl">
+          Macam-macam Produk UMKM AWK
+        </h1>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 w-fit mx-auto gap-x-12 gap-y-8">
           {loading ? (
             <div className="flex justify-center items-center xl:col-start-2 xl:col-span-1 md:col-start-1 md:col-span-2">

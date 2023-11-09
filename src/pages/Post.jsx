@@ -64,7 +64,7 @@ export default function Post() {
           </div>
         </div>
       </div>
-      <div className="w-full h-fit flex flex-col justify-center items-center py-6 md:py-24 lg:px-[25%] md:px-[10%] text-center px-4 bg-white">
+      <div className="w-full h-fit flex flex-col justify-center items-center py-4 md:py-8 lg:px-[25%] md:px-[10%] text-center px-4 bg-white">
         <RichText content={article.konten.raw} renderers={customRenderers} />
       </div>
     </>
