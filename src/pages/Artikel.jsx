@@ -86,7 +86,7 @@ export default function Artikel() {
         </h1>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 w-fit mx-auto gap-x-12 gap-y-8">
           {loading ? (
-            <div className="flex justify-center items-center xl:col-start-2 xl:col-span-1 md:col-start-1 md:col-span-2">
+            <div className="flex justify-center items-center xl:col-start-2 my-12 xl:col-span-1 md:col-start-1 md:col-span-2">
               <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-primary"></div>
             </div>
           ) : (

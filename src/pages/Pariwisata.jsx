@@ -58,10 +58,10 @@ export default function Pariwisata() {
           Alas Watu Kebonan
         </h1>
         <p className="text-white text-opacity-80 z-[5] text-sm md:text-lg lg:text-xl font-medium text-justify my-2 md:my-3 lg:my-4">
-          AWK menawarkan bermacam-macam wahana wisata yang dapat dinikmati oleh
-          semua kalangan, mulai dari anak-anak, remaja, hingga dewasa. Dengan
-          harga tiket yang terjangkau, Anda dapat menikmati berbagai wahana
-          wisata yang ada di AWK.
+          Wisata edukasi AWK menawarkan berbagai jenis atraksi wisata dimana
+          wisatawan terlibat secara langsung dalam suatu obyek daya tarik
+          wisata. Dengan harga yg terjangkau, anda dapat menikmati berbagai
+          wahana wisata yang ada di AWK.
         </p>
         <div className="flex w-full md:flex-row flex-col flex-wrap justify-end items-end gap-x-3 gap-y-2 z-[5]">
           <button
@@ -85,15 +85,24 @@ export default function Pariwisata() {
         </div>
       </div>
       {/* Detail */}
-      <div className="w-full flex flex-col justify-center items-center py-8 gap-y-6 md:py-12 text-center bg-white">
-        <h1 className="uppercase font-semibold text-center md:mb-2 text-lg md:text-2xl lg:px-[25%] md:px-[15%] px-4">
+      <div className="w-full flex flex-col justify-center items-center py-8 md:py-12 text-center bg-white">
+        <h1 className="uppercase font-semibold text-center mb-4 text-lg md:text-2xl px-6">
+          Eduwisata
+        </h1>
+        <p className="text-justify text-sm md:text-lg xl:text-xl xl:px-[26%] lg:px-[20%] md:px-[8%] px-4 max-w-[400px] md:max-w-none">
+          Eduwisata Alas Watu Kebonan adalah sebuah rangkaian program wisata
+          edukasi, di mana wisatawan dapat berinteraksi secara langsung dalam
+          suatu obyek daya tarik wisata yang berada di kawasan Alas Watu, Desa
+          Kebonan.
+        </p>
+        <h1 className="uppercase font-semibold text-center mt-8 mb-6 md:mt-12 text-lg md:text-2xl lg:px-[25%] md:px-[15%] px-4">
           Variasi Paket di Alas Watu Kebonan
         </h1>
         {/* Pariwisata Cards */}
         {paket.map((item, index) => (
           <div
             key={item.id}
-            className="flex flex-col md:flex-row gap-y-4 md:w-full md:max-w-none max-w-[400px] gap-x-6 lg:px-[20%] md:px-[5%] px-4 justify-center"
+            className="flex flex-col md:flex-row gap-y-4 mb-6 md:w-full md:max-w-none max-w-[400px] gap-x-6 lg:px-[20%] md:px-[5%] px-4 justify-center"
           >
             <div className="md:w-[300px] md:h-auto md:max-h-[250px] h-[200px] bg-gray-300">
               <img

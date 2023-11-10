@@ -77,7 +77,7 @@ export default function Galeri() {
           Sebagai hasilnya, AWK menjadi tempat yang selalu diingat dan ingin
           dikunjungi kembali oleh pengunjung, terutama kaum milenial.
         </p>
-        <h1 className="uppercase font-semibold text-center mb-4 mt-6 md:mt-12 text-lg md:text-2xl">
+        <h1 className="uppercase font-semibold text-center mb-6 mt-6 md:mt-12 text-lg md:text-2xl">
           Galeri
         </h1>
         <div className="grid w-full lg:grid-cols-4 md:grid-cols-3 grid-cols-2 md:gap-6 gap-4 row">

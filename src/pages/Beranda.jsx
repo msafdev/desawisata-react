@@ -70,7 +70,7 @@ function Beranda() {
             Mau ngapain?
           </p>
           <h1 className="md:text-3xl text-2xl font-bold text-primary">
-            Destinasi Pariwisata
+            Destinasi Eduwisata
           </h1>
           <div className="flex my-6 md:my-8 gap-4 flex-wrap items-center justify-center">
             {pariwisata.map((pariwisata, index) => (

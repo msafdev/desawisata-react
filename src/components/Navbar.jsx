@@ -17,7 +17,7 @@ export default function Navbar() {
     },
     {
       id: 2,
-      name: "Pariwisata",
+      name: "Eduwisata",
       path: "/pariwisata",
       textColor:
         location.pathname === "/pariwisata"
