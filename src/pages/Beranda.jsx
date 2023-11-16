@@ -163,7 +163,7 @@ function Beranda() {
               Ayo Belanja
             </p>
             <h1 className="md:text-3xl text-2xl font-bold text-primary text-center">
-              Produk UMKM Desa Sambirejo
+              Produk UMKM Alas Watu Kebonan
             </h1>
           </div>
           <div className="flex flex-wrap gap-4 my-6 items-center justify-center w-full max-w-[1000px] duration-0 h-fit">

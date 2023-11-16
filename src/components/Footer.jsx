@@ -5,7 +5,9 @@ export default function Footer() {
     <div className="flex flex-col">
       <div className="text-white bg-primary md:px-10 px-4 py-10 flex lg:flex-row flex-col gap-4 md:gap-6 lg:gap-10 lg:text-left text-center">
         <div className="w-full lg:max-w-[200px] flex flex-col">
-          <h1 className="font-bold text-2xl md:text-4xl lg:text-6xl">Alas Watu Kebonan</h1>
+          <h1 className="font-bold text-2xl md:text-4xl lg:text-6xl">
+            Alas Watu Kebonan
+          </h1>
         </div>
         <div className="flex flex-col lg:ml-auto">
           <h1 className="font-semibold text-lg">Kunjungi Kami</h1>
@@ -58,7 +60,8 @@ export default function Footer() {
         </div>
       </div>
       <p className="text-center bg-primary text-white text-xs uppercase pt-2 pb-4 text-opacity-75">
-        © 2023 Desa Wisata Kebonan. All rights reserved.
+        Program Iptek untuk Desa Binaan UNDIP (IDBU) 2023 Kerjasama
+        FIB dan LPPM UNDIP
       </p>
     </div>
   );
