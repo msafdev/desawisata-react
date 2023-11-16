@@ -1,9 +1,11 @@
 import { MoveDownRight } from "lucide-react";
 
-import { products } from "../data";
 import Product from "../components/Product";
+import { getUMKM } from "../API";
 
 export default function Umkm() {
+  const { produk, loading } = getUMKM();
+
   return (
     <div className="min-h-screen w-full flex flex-col bg-white text-primary pt-[100px]">
       {/* Hero */}
@@ -52,9 +54,15 @@ export default function Umkm() {
           Macam-macam Produk UMKM AWK
         </h1>
         <div className="flex flex-wrap gap-4 items-center justify-center w-full max-w-[1000px] duration-0 h-fit px-4 md:px-8">
-          {products.map((product) => (
-            <Product product={product} key={product.id} />
-          ))}
+          {loading ? (
+            <div className="flex justify-center items-center xl:col-start-2 my-12 xl:col-span-1 md:col-start-1 md:col-span-2">
+              <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-primary"></div>
+            </div>
+          ) : (
+            produk.map((product) => (
+              <Product product={product} key={product.id} />
+            ))
+          )}
         </div>
       </div>
     </div>

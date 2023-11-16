@@ -5,12 +5,15 @@ import {
   ChevronRight,
   ShoppingCart,
 } from "lucide-react";
-
-import { products, pariwisata, seniBudaya } from "../data";
-import Product from "../components/Product";
 import { Link } from "react-router-dom";
 
+import { pariwisata, seniBudaya } from "../data";
+import Product from "../components/Product";
+import { getUMKM } from "../API";
+
 function Beranda() {
+  const { produk, loading } = getUMKM();
+
   return (
     <>
       <div className="min-h-screen w-full flex flex-col bg-white text-primary pt-[100px]">
@@ -167,9 +170,15 @@ function Beranda() {
             </h1>
           </div>
           <div className="flex flex-wrap gap-4 my-6 items-center justify-center w-full max-w-[1000px] duration-0 h-fit">
-            {products.slice(0, 3).map((product) => (
-              <Product product={product} key={product.id} />
-            ))}
+            {loading ? (
+              <div className="flex justify-center items-center xl:col-start-2 my-12 xl:col-span-1 md:col-start-1 md:col-span-2">
+                <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-primary"></div>
+              </div>
+            ) : (
+              produk.map((product) => (
+                <Product product={product} key={product.id} />
+              ))
+            )}
           </div>
           <div className="flex w-full max-w-[930px] justify-center lg:justify-end">
             <Link

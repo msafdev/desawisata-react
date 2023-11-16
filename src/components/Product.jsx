@@ -5,7 +5,7 @@ export default function Product({ product, width }) {
     <div className="relative duration-0 overflow-hidden bg-white">
       <div className="card duration-0 group cursor-pointer">
         <img
-          src="https://desawisatasambirejo.com/wp-content/uploads/2022/09/Gantungan-kunci-2-1024x1024.png"
+          src={product.foto.url}
           alt="Product Image"
           className={`w-[100%] max-w-[240px] aspect-square object-cover duration-0`}
         />
@@ -14,7 +14,7 @@ export default function Product({ product, width }) {
         </div>
       </div>
       <div
-        className={`flex flex-col gap-1 px-2 py-1 w-[100%] max-w-[240px] text-left duration-0`}
+        className={`flex flex-col gap-1 py-3 w-[100%] max-w-[240px] text-left duration-0`}
       >
         <h1 className="text-primary text-lg text-left font-semibold">
           {product.nama}
